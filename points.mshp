@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SAGA_METADATA>
+  <DATABASE>
+    <FIELDS>
+      <FIELD TYPE="STRING">id</FIELD>
+      <FIELD TYPE="DOUBLE">X</FIELD>
+      <FIELD TYPE="DOUBLE">Y</FIELD>
+      <FIELD TYPE="DOUBLE">Z</FIELD>
+      <FIELD TYPE="DOUBLE">w15</FIELD>
+      <FIELD TYPE="DOUBLE">w30</FIELD>
+      <FIELD TYPE="DOUBLE">w45</FIELD>
+      <FIELD TYPE="DOUBLE">x</FIELD>
+      <FIELD TYPE="DOUBLE">y</FIELD>
+    </FIELDS>
+  </DATABASE>
+  <SOURCE></SOURCE>
+  <HISTORY saga-version="8.1.0">
+    <TOOL library="shapes_points" id="6" name="Add Coordinates to Points">
+      <OPTION type="boolean" id="X" name="X">true</OPTION>
+      <OPTION type="boolean" id="Y" name="Y">true</OPTION>
+      <OPTION type="boolean" id="Z" name="Z">false</OPTION>
+      <OPTION type="boolean" id="M" name="M">false</OPTION>
+      <OPTION type="boolean" id="LON" name="Longitude">false</OPTION>
+      <OPTION type="boolean" id="LAT" name="Latitude">false</OPTION>
+      <INPUT type="shapes" id="INPUT" name="Points">
+        <FILE>/home/andrey/Yandex.Disk/RSAU_MTAA/19-29-05261/ВНИИОЗ/shp/points.shp</FILE>
+      </INPUT>
+      <OUTPUT type="shapes" id="OUTPUT" name="Output">points</OUTPUT>
+    </TOOL>
+  </HISTORY>
+  <FILE></FILE>
+  <DESCRIPTION></DESCRIPTION>
+  <PROJECTION>
+    <OGC_WKT>PROJCS["WGS 84 / UTM zone 38N",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",45],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","32638"]]</OGC_WKT>
+    <PROJ4>+proj=utm +zone=38 +datum=WGS84 +units=m +no_defs </PROJ4>
+    <EPSG>32638</EPSG>
+  </PROJECTION>
+</SAGA_METADATA>
